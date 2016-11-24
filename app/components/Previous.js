@@ -5,7 +5,7 @@ import styles from '../../css/style.css';
 class Previous extends React.Component {
 
   render() {
-    return (<div> 
+    return (<div styleName="previous"> 
     </div>)
   }
 }

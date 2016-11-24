@@ -5,8 +5,10 @@ import styles from '../../css/style.css';
 class Search extends React.Component {
 
   render() {
-    return (<div> 
-    </div>)
+    return (<div styleName="search">
+              <div styleName="search-icon"></div>
+              <input styleName="search-text"  type="text" />
+            </div>)
   }
 }
 export default CSSModules(Search, styles);

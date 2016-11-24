@@ -2,12 +2,12 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from '../../css/style.css';
 
-class Trakcname extends React.Component {
+class Playingnow extends React.Component {
 
   render() {
-    return (<div styleName="trakcname">
+    return (<div styleName="playingnow">
             Artist - Track
             </div>)
   }
 }
-export default CSSModules(Trakcname, styles);
+export default CSSModules(Playingnow, styles);

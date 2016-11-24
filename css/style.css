@@ -6,31 +6,161 @@ body{
 .audioplayer{
   margin: 150px auto 0;
   border: 2px solid black;
-  width: 400px;
+  width: 460px;
   min-height: 600px;
   position: relative;
-  padding: 40px;
 }
 
 .audioplayer h1{
   background: #fff none repeat scroll 0 0;
   letter-spacing: 6px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: -18px auto 0;
+  padding: 0 20px 40px;
   position: relative;
   text-transform: uppercase;
-  top: -60px;
   width: 281px;
 }
 
-.trakcname{
+.player{
+  padding: 0px 40px 40px;
+  border-bottom: 2px solid black;
+}
+
+.playingnow{
+  display: block;
   font-size: 25px;
+  background: url('../images/icons/music.png') top left no-repeat;
+  background-size: contain;
+  padding-left: 48px;
+  font-weight: bold;
+
 }
 
 .progressbar{
+  margin-top: 30px;
+  border: 1px solid black;
+  width: 100%;
+  height: 20px;
+}
+
+.track-constrols {
+  width: auto;
+  margin-top: 30px;
+  overflow: auto;
+  zoom: 1;
+}
+
+.volume{
+  float: right;
+  width: 160px;
+  height: 40px;
+  position: relative;
+}
+
+.volume-bar{
+  border: 1px solid black;
+  width: 100px;
+  height: 20px;
+  float:right;
+  margin-top: 10px;
+}
+
+.speaker-high{
+  background: url('../images/icons/speaker-high.png') top left no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.previous{
+  float: left;
+  margin-top:4px;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icons/previous.png') top left no-repeat;
+  background-size: contain;
+}
+
+.play{
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin: 0 12px;
+  background: url('../images/icons/play.png') top left no-repeat;
+  background-size: contain;
+}
+
+.pause{
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin: 0 12px;
+  background: url('../images/icons/pause.png') top left no-repeat;
+  background-size: contain;
+}
+
+.next{
+  float: left;
+  margin-top:4px;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icons/next.png') top left no-repeat;
+  background-size: contain;
+}
+
+.search{
+  padding: 20px 40px;
+  position: relative;
+  height: 50px;
+  display: block;
+  overflow: auto;
+  zoom: 1;
+}
+
+.search-icon{
+  background: url('../images/icons/search.png') top left no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin: 5px 0 0 0;
+  vertical-align: baseline;
+  float: left;
+}
+
+.search-text{
+  border: 2px solid black;
+  padding: 10px;
+  margin-left: 25px;
+  position: relative;
+  height: 20px;
+  display: block;
+  width: 290px;
+  float:left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.playlist{
+  padding:10px 40px 0;
+}
+
+.track{
+  overflow: auto;
+  zoom: 1;
+  width: 100%;
 
 }
 
-.track-constrols{
-  width: 100px;
+.trackname{
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.duration{
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
 }
