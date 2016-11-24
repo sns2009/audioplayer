@@ -1,0 +1,36 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+}
+
+.audioplayer{
+  margin: 150px auto 0;
+  border: 2px solid black;
+  width: 400px;
+  min-height: 600px;
+  position: relative;
+  padding: 40px;
+}
+
+.audioplayer h1{
+  background: #fff none repeat scroll 0 0;
+  letter-spacing: 6px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  text-transform: uppercase;
+  top: -60px;
+  width: 281px;
+}
+
+.trakcname{
+  font-size: 25px;
+}
+
+.progressbar{
+
+}
+
+.track-constrols{
+  width: 100px;
+}
