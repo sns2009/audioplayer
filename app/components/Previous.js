@@ -4,8 +4,18 @@ import styles from '../../css/style.css';
 
 class Previous extends React.Component {
 
+  constructor(){
+    super();
+    this.previousClick = this.previousClick.bind(this);
+  }
+
+  previousClick(e){
+    e.preventDefault();
+    if(this.props.isPlaying) this.props.previous();
+  }
+
   render() {
-    return (<div styleName="previous"> 
+    return (<div onClick={this.previousClick} styleName="previous"> 
     </div>)
   }
 }

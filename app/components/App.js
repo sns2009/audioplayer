@@ -5,7 +5,7 @@ import Audioplayer from './Audioplayer';
 
 function mapStateToProps(state) {
   return {
-    store: state.Gamelogic,
+    store: state.Playerlogic,
 
   };
 }

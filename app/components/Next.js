@@ -4,8 +4,20 @@ import styles from '../../css/style.css';
 
 class Next extends React.Component {
 
+  constructor(){
+    super();
+    this.nextClick = this.nextClick.bind(this);
+  }
+
+  nextClick(e){
+    e.preventDefault();
+    if(this.props.isPlaying) {
+      this.props.next();
+    }
+  }
+
   render() {
-    return (<div styleName="next"> 
+    return (<div onClick={this.nextClick} styleName="next"> 
     </div>)
   }
 }

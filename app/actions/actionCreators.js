@@ -1,13 +1,56 @@
-export function changeCardsStatus(cardsToChange, status) {
+export function startTracksFetch() {
   return {
-    type: 'CHANGE_CARD_STATUS',
-    cardsToChange,
-    status,
+    type: 'START_TRACKS_FETCH',
   };
 }
-export function setPrevFieldSize(prevFieldSize) {
+export function tracksRecieved(tracks) {
   return {
-    type: 'SET_PREV_FIELD_SIZE',
-    prevFieldSize,
+    type: 'TRACKS_RECIEVED',
+    tracks,
+  };
+}
+export function fetchTracksError(error) {
+  return {
+    type: 'FETCH_TRACKS_ERROR',
+    error,
+  };
+}
+export function playTrack(id) {
+  return {
+    type: 'PLAY_TRACK',
+    id,
+  };
+}
+export function pause() {
+  return {
+    type: 'PAUSE'
+  };
+}
+export function play() {
+  return {
+    type: 'PLAY'
+  };
+}
+export function next() {
+  return {
+    type: 'NEXT'
+  };
+}
+export function previous() {
+  return {
+    type: 'PREVIOUS'
+  };
+}
+export function trackMount(isTrackMounted) {
+  return {
+    type: 'TRACK_MOUNT',
+    isTrackMounted
+  };
+}
+export function setVolume(volume,volumeBarWidth) {
+  return {
+    type: 'VOLUME',
+    volume,
+    volumeBarWidth
   };
 }
