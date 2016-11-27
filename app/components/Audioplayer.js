@@ -1,30 +1,17 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import styles from '../../css/style.css';
-import axios from 'axios';
 import Playingnow from './Playingnow';
 import Progressbar from './Progressbar';
 import Previous from './Previous';
 import PlayPause from './PlayPause';
 import Next from './Next';
 import Volume from './Volume';
-import Search from './Search';
 import Playlist from './Playlist'
 
 
 class Audioplayer extends React.Component {
 
-    componentDidMount(){
-    console.log(window.playingTrack);
-    }
-
-    //  var audio = new Audio('https://freemusicarchive.org/music/listen/9679ffcc50755c75ded1bad8a11067cbb2bf0ac3');
-    // audio.play();
-    // audio.onloadedmetadata = function() {
-    //   console.log(audio.duration / 60);
-    // };
-    
-    // console.log(songs); 
 
   render() {
     return (<div styleName="audioplayer">
@@ -59,10 +46,27 @@ class Audioplayer extends React.Component {
                           fetchTracksError={this.props.fetchTracksError}
                           playTrack={this.props.playTrack}
                           trackMount={this.props.trackMount}
-                          next={this.props.next} />
-
-
+                          />
             </div>);
   }
+}
+Audioplayer.propTypes = {
+  playingTrackId : React.PropTypes.number,
+  isPlaying : React.PropTypes.bool,
+  previous : React.PropTypes.func,
+  pause : React.PropTypes.func,
+  play : React.PropTypes.func,
+  next : React.PropTypes.func,
+  volume : React.PropTypes.number,
+  volumeBarWidth : React.PropTypes.number,                 
+  fetching : React.PropTypes.bool,
+  fetched : React.PropTypes.bool,
+  isTrackMounted : React.PropTypes.bool,
+  startTracksFetch : React.PropTypes.func,
+  tracksRecieved : React.PropTypes.func,
+  fetchTracksError : React.PropTypes.func,
+  playTrack : React.PropTypes.func,
+  trackMount : React.PropTypes.func,
+  setVolume : React.PropTypes.func
 }
 export default CSSModules(Audioplayer, styles);

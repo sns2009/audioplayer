@@ -4,21 +4,24 @@ import styles from '../../css/style.css';
 
 class Next extends React.Component {
 
-  constructor(){
+  constructor() {
     super();
     this.nextClick = this.nextClick.bind(this);
   }
 
-  nextClick(e){
+  nextClick(e) {
     e.preventDefault();
-    if(this.props.isPlaying) {
+    if (this.props.isPlaying) {
       this.props.next();
     }
   }
 
   render() {
-    return (<div onClick={this.nextClick} styleName="next"> 
-    </div>)
+    return (<div onClick={this.nextClick} styleName="next" />);
   }
+}
+Next.propTypes = {
+  isPlaying : React.PropTypes.bool,
+  next : React.PropTypes.func
 }
 export default CSSModules(Next, styles);

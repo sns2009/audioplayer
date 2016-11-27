@@ -6,7 +6,7 @@ export function startTracksFetch() {
 export function tracksRecieved(tracks) {
   return {
     type: 'TRACKS_RECIEVED',
-    tracks,
+    tracks
   };
 }
 export function fetchTracksError(error) {
@@ -23,34 +23,34 @@ export function playTrack(id) {
 }
 export function pause() {
   return {
-    type: 'PAUSE'
+    type: 'PAUSE',
   };
 }
 export function play() {
   return {
-    type: 'PLAY'
+    type: 'PLAY',
   };
 }
 export function next() {
   return {
-    type: 'NEXT'
+    type: 'NEXT',
   };
 }
 export function previous() {
   return {
-    type: 'PREVIOUS'
+    type: 'PREVIOUS',
   };
 }
 export function trackMount(isTrackMounted) {
   return {
     type: 'TRACK_MOUNT',
-    isTrackMounted
+    isTrackMounted,
   };
 }
-export function setVolume(volume,volumeBarWidth) {
+export function setVolume(volume, volumeBarWidth) {
   return {
     type: 'VOLUME',
     volume,
-    volumeBarWidth
+    volumeBarWidth,
   };
 }

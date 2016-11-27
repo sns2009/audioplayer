@@ -4,12 +4,11 @@ import styles from '../../css/style.css';
 
 class Volume extends React.Component {
 
-  
-
   constructor(){
     super();
     this.changeVolume = this.changeVolume.bind(this);
   }
+
 
   changeVolume(e){
     let volume = +((e.pageX - e.currentTarget.getBoundingClientRect().left) / e.currentTarget.getBoundingClientRect().width);
@@ -27,5 +26,11 @@ class Volume extends React.Component {
               </div>
             </div>)
   }
+}
+Volume.propTypes = {
+  isPlaying : React.PropTypes.bool,
+  volume : React.PropTypes.number,
+  volumeBarWidth : React.PropTypes.number,   
+  setVolume : React.PropTypes.func
 }
 export default CSSModules(Volume, styles);
