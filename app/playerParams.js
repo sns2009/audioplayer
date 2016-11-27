@@ -1,6 +1,6 @@
 const playerParams = {
   tracksInPlaylist: 6,
-  trackLettersInPlaylist: 36,
-  trackLettersInPlayingnow: 30,
+  trackLettersInPlaylist: 35,
+  trackLettersInPlayingnow: 28,
 };
 export default playerParams;
